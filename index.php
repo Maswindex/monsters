@@ -25,6 +25,9 @@
     echo $monster3->getName().'<br>';
     echo $monster3->attack().'<br>';
     echo $monster2->attack().'<br>';
+    echo $monster2->attack().'<br>';
+    echo $monster2->attack().'<br>';
+    echo $monster2->attack().'<br>';
     echo $monster1->attack().'<br>';
     echo $monster3->parry().'<br>';
     echo $monster2->getVictims().'<br>';

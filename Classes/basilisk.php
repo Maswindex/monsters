@@ -3,6 +3,7 @@
 class Basilisk extends Monster
 {
     private $victims;
+    private $eyes = open;
 
     function __construct($name="Snakey snake")
     {
@@ -25,6 +26,7 @@ class Basilisk extends Monster
     {
         echo $this->getName().' closed his eyes. Attack now!';
         $this->victims--;
+        $this->eyes='closed';
     }
 
 
