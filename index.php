@@ -1,7 +1,12 @@
 <?php
 
     include 'Classes/monster.php';
-    $monster1 = new Monster("Minotaur");
+    include 'Classes/vampire.php';
+    include 'Classes/basilisk.php';
+    $monster1 = new Monster("Minotausssr");
+    $monster2 = new Vampire("The other drACULA");
+    $monster3 = new Basilisk();
+
 ?>
 
 <!doctype html>
@@ -15,9 +20,14 @@
 </head>
 <body>
 <?php
-
-    echo 'Hello, '.$monster1->getName();
-
+    echo $monster1->getName().'<br>';
+    echo $monster2->getName().'<br>';
+    echo $monster3->getName().'<br>';
+    echo $monster3->attack().'<br>';
+    echo $monster2->attack().'<br>';
+    echo $monster1->attack().'<br>';
+    echo $monster3->parry().'<br>';
+    echo $monster2->getVictims().'<br>';
 ?>
 </body>
 </html>
